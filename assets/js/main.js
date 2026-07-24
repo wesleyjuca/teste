@@ -60,7 +60,8 @@ let previousFocus = null;
 const openLightbox = (item) => {
   previousFocus = document.activeElement;
   const full = item.getAttribute('data-full');
-  const caption = item.getAttribute('data-caption') || 'Imagem da galeria';
+    if (!full || !lightbox || !lightboxImage || !lightboxCaption) return;
+  const caption = item.getAttribute('data-caption') || item.querySelector('img')?.alt || 'Imagem da galeria';
   lightboxImage.setAttribute('src', full);
   lightboxImage.setAttribute('alt', caption);
   lightboxCaption.textContent = caption;

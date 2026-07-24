@@ -80,8 +80,12 @@ h3 { font-size: 1.5rem; }
 .timeline li { border-left: 3px solid var(--gold); padding: 1rem 1.25rem; background: rgba(0,0,0,.22); border-radius: 0 20px 20px 0; }
 .timeline span { color: var(--gold); font-weight: 900; }
 .video-placeholder { min-height: 320px; display: grid; place-items: center; color: var(--muted); }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.gallery-item { min-height: 220px; color: var(--cream); font: 800 1.25rem var(--text); cursor: pointer; background: linear-gradient(145deg, rgba(216,162,58,.24), rgba(75,17,26,.62), rgba(184,101,42,.32)); }
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.gallery-item { aspect-ratio: 3 / 4; position: relative; overflow: hidden; display: block; padding: 0; color: var(--cream); font: 800 1.25rem var(--text); cursor: pointer; background: linear-gradient(145deg, rgba(216,162,58,.24), rgba(75,17,26,.62), rgba(184,101,42,.32)); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
+.gallery-item:hover img, .gallery-item:focus-visible img { transform: scale(1.04); }
+.gallery-item span { position: absolute; inset: auto 0 0; padding: 1rem; color: var(--white); background: linear-gradient(180deg, transparent, rgba(0,0,0,.86)); text-align: left; text-shadow: 0 1px 3px rgba(0,0,0,.9); }
+.gallery-item:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .social-links a { color: var(--black); background: var(--gold); padding: .9rem 1.2rem; border-radius: 999px; text-decoration: none; font-weight: 900; border: 1px solid var(--gold); }
 .social-links a:hover, .primary:hover { background: #F0BF57; }
 .secondary:hover { background: #FFFFFF; }

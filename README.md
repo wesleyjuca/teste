@@ -51,7 +51,7 @@ Projeto estático para uma landing page premium, responsiva e acessível de **Ro
 ## Validações realizadas
 
 - Estrutura HTML semântica com `header`, `nav`, `main`, `section` e `footer`.
-- CSS responsivo com paleta preto `#0B0B0B`, dourado `#C8A45A`, branco e tons quentes discretos.
+- CSS responsivo com paleta vinho profundo `#16070D`, dourado `#F2B84B`, creme claro e acentos cobre para contraste em textos, botões e links.
 - Tipografia configurada para Playfair Display em títulos e Inter em textos.
 - Estados de foco visíveis, contraste adequado e suporte a `prefers-reduced-motion`.
 - JavaScript com menu mobile, rolagem suave, animações discretas, lazy loading complementar e lightbox acessível.

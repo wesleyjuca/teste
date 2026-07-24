@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #100b08;
+  color: #fff8ef;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left, #7b3517 0, transparent 34rem), #100b08; }
+
+.landing-page { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0; }
+
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.86fr); gap: 48px; align-items: center; min-height: calc(100vh - 96px); }
+
+.eyebrow { color: #ffc978; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.16em; margin: 0 0 16px; text-transform: uppercase; }
+
+h1 { font-size: clamp(3rem, 9vw, 7.5rem); line-height: 0.9; margin: 0; max-width: 8ch; }
+
+.hero__lead { color: #f5dfc8; font-size: clamp(1.125rem, 2vw, 1.45rem); line-height: 1.65; margin: 28px 0 36px; max-width: 640px; }
+
+.button { background: #ffb13d; border-radius: 999px; color: #1c1009; display: inline-flex; font-weight: 800; padding: 16px 24px; text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease; }
+
+.button:focus-visible, .button:hover { box-shadow: 0 18px 48px rgba(255, 177, 61, 0.34); transform: translateY(-2px); }
+
+.hero__media { margin: 0; }
+
+.hero__media > img { aspect-ratio: 4 / 5; background: linear-gradient(145deg, #2b1811, #7b3517); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 32px; box-shadow: 0 28px 72px rgba(0, 0, 0, 0.34); display: block; overflow: hidden; }
+
+.hero__media img { display: block; height: 100%; object-fit: cover; width: 100%; }
+
+figcaption { color: #d8bfa7; font-size: 0.85rem; line-height: 1.5; margin-top: 12px; }
+
+.highlights { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+
+.highlights article { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 24px; padding: 24px; }
+
+.highlights h2 { margin: 0 0 10px; }
+
+.highlights p { color: #f1d6bd; line-height: 1.6; margin: 0; }
+
+@media (max-width: 760px) {
+  .landing-page { padding: 28px 0; }
+  .hero { gap: 28px; grid-template-columns: 1fr; min-height: auto; }
+  .hero__media { order: -1; }
+  .highlights { grid-template-columns: 1fr; margin-top: 36px; }
+}

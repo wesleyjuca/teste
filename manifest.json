@@ -1,0 +1,25 @@
+{
+  "name": "Rodrigo Damasceno",
+  "short_name": "R. Damasceno",
+  "description": "Landing page oficial de Rodrigo Damasceno, cantor e sambista do Acre.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0B",
+  "theme_color": "#0B0B0B",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192-placeholder.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512-placeholder.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
